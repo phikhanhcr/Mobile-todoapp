@@ -14,7 +14,6 @@ class App extends Component {
     this.state = {
       showBoxInput: false,
       completed: [
-        {title : "Do homework" , isComplete: false }
       ],
       notDone: [
         
