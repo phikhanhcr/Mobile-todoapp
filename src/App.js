@@ -199,3 +199,6 @@ class App extends Component {
 }
 
 export default App;
+
+// codeSandbox
+// https://codesandbox.io/s/lucid-lehmann-n02yo?file=/src/components/Completed.js:250-450

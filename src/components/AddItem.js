@@ -1,6 +1,13 @@
 import React, { Component } from 'react';
 import classNames from 'classnames';
 class Input extends Component {
+  constructor(props) {
+    super(props);
+    this.inputElement = React.createRef();
+  }
+  componentDidMount() {
+    this.inputElement.current.focus();
+  }
   render() {
     const { show, onCancel ,Input , value ,onChangeInput , EnterIcon} = this.props;
     let className = "PhoneInput"
@@ -17,6 +24,7 @@ class Input extends Component {
           onKeyUp={Input}
           value={value}
           onChange={onChangeInput}
+          ref={this.inputElement}
         />
         <a href="#" onClick={EnterIcon}>Enter</a>
       </div>
